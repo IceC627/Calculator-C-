@@ -1,8 +1,42 @@
-# Calculator-C++ by IceC
+# Calculator By IceC (C++)
 
 
+# Information
+- This was made using a bunch of tutorials that I found online
+- Code:
+- # include <iostream>
+# include <cmath>
 
-![image](https://github.com/user-attachments/assets/d7bdb66b-0354-4ccd-92e5-315460e35958)
+using namespace std;
 
-This is a simple calculator that I made by following a couple C++ tutorials.
-I'm currently learning how to code on C++, in the future I might make some more programs that might be more useful than this one.
+int main()
+{
+
+    // define variables 
+    string operation;
+    double number1, number2;
+
+    // get user input
+    cout << "Enter First Number: ";
+    cin >> number1; 
+    cout << "Enter Operation (+, -, x, /): ";
+    cin >> operation;
+    cout << "Enter Second Number: ";
+    cin >> number2;
+
+    // if else statement checking entered operation
+    if (operation == "+"){
+        cout << number1 + number2;
+    } else if (operation == "-"){
+        cout << number1 - number2;
+    } else if (operation == "x"){
+        cout << number1 * number2;
+    } else if (operation == "/"){
+        cout << number1 / number2;
+    } else {
+        cout << "Not a recognized operation!";
+    }
+
+    return 0;
+
+}
